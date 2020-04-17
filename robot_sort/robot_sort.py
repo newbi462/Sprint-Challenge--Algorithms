@@ -108,7 +108,7 @@ class SortingRobot:
             # if yes move right
             # of no swap,
             # if end swap it must be biggest
-        #take held back to none
+        #take held back to none/start?
         #move right
 
         #pick up, lop over above
