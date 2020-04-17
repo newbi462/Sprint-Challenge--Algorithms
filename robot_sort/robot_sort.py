@@ -101,13 +101,20 @@ class SortingRobot:
 
 
         # pick up first one
-        # move right
 
 
+        # move end
         # is held biger?
-            # if yes move right
-            # of no swap,
-            # if end swap it must be biggest
+            # if yes awap
+            # of no move left
+
+        #loop over avove on swap
+
+        # if atr start
+            #drop
+            #move right
+
+
         #take held back to none/start?
         #move right
 
