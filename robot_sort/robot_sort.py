@@ -110,9 +110,12 @@ class SortingRobot:
 
         #loop over avove on swap
 
-        # if atr start
+        # if at NONE
             #drop
             #move right
+            #pick up
+            #above loop
+            #If all the way right at NONE swap END
 
 
         #take held back to none/start?
