@@ -99,12 +99,19 @@ class SortingRobot:
         # Fill this out
         #pass
 
+
         # pick up first one
-        # move all the way right
+        # move right
+
+
         # is held biger?
             # if yes move right
-            # of no swap, if end swap must be biggest
-                #move all the way left
+            # of no swap,
+            # if end swap it must be biggest
+        #take held back to none
+        #move right
+
+        #pick up, lop over above
 
         print(SortingRobot.swap_item(self))
         SortingRobot.swap_item(self)
