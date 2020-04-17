@@ -14,3 +14,14 @@ c)O(2n) reduced to O(n)
 * This will run 2 times as long as n or ```bunnies``` due to the recursion call back reducing in a way that results in 2n, but 2 does not count so it is O(n)
 
 ## Exercise II
+##### I would use binary search to do this
+### Starting on the top floor, drop egg
+* if it breaks, divide floor in half excluding remainder, and go to that floor
+* if egg is un broken, I am done all floors pass and this is my highest floor for this building
+
+
+### On new floor: drop egg:
+* if it breaks: new floor = ( top floor - this floor//2) + this floor, then repeat new floor
+* if egg is un broken, I am done all floors pass and this is my highest floor for this building
+
+Run time should average out to O(log n) because I using binary to half my tries with each loop, where floor by floor non binary would be O(n)
