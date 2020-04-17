@@ -123,6 +123,30 @@ class SortingRobot:
 
         #pick up, lop over above
 
+        SortingRobot.swap_item(self)
+# how to loop back to here?
+        while SortingRobot.can_move_right(self):
+            SortingRobot.move_right(self)
+
+        if SortingRobot.compare_item(self) == 1:
+            SortingRobot.swap_item(self)
+        else:
+            SortingRobot.move_left(self)
+
+        #print(SortingRobot.compare_item(self))
+        while SortingRobot.compare_item(self) == -1:
+            SortingRobot.move_left(self)
+            print(SortingRobot.compare_item(self))
+
+        if SortingRobot.compare_item(self) == None:
+            SortingRobot.swap_item(self)
+            SortingRobot.move_right(self)
+            SortingRobot.swap_item(self)
+            #if SortingRobot.can_move_right(self) == True:
+            #S    SortingRobot.sort(self)
+
+
+"""
         print(SortingRobot.swap_item(self))
         SortingRobot.swap_item(self)
         print(SortingRobot.swap_item(self))
@@ -139,7 +163,7 @@ class SortingRobot:
 
 
             #pass
-"""
+
     run_loop = 0
     while run_loop < len(arr):   ???
         for i in range(0, len(arr)-1):  while you can move right
