@@ -10,6 +10,7 @@ b)O(n log n)
 * While a loop in a loop would default to n^2, in this case the ```while j < n:``` is cut by half with each loop ```j *= 2``` so instead in this case it would be log n * n for the outer loop ```for i in range(n):```
 
 
-c)
+c)O(2n) reduced to O(n)
+* This will run 2 times as long as n or ```bunnies``` due to the recursion call back reducing in a way that results in 2n, but 2 does not count so it is O(n)
 
 ## Exercise II
